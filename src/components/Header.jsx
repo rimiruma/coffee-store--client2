@@ -3,13 +3,14 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
 
-   const links = <>
-    <li><NavLink to="/">Home</NavLink></li>
-    <li><NavLink to="/addCoffee">AddCoffee</NavLink></li>
-    <li><NavLink to="/signIn">signIn</NavLink></li>
-    <li><NavLink to="/signUp">signUp</NavLink></li>
-   </>
-    
+    const links = <>
+        <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/addCoffee">AddCoffee</NavLink></li>
+        <li><NavLink to="/signIn">signIn</NavLink></li>
+        <li><NavLink to="/signUp">signUp</NavLink></li>
+        <li><NavLink to="/users">Users</NavLink></li>
+    </>
+
     return (
         <div>
             <div className="navbar bg-base-100">
@@ -32,15 +33,15 @@ const Header = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                                 {links}
+                            {links}
                         </ul>
-                       
+
                     </div>
                     <a className="btn btn-ghost text-xl">daisyUI</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                    {links}
+                        {links}
                     </ul>
                 </div>
                 <div className="navbar-end">
